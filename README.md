@@ -1,3 +1,1 @@
 # Estudo
-# Estudo
-# Estudo
