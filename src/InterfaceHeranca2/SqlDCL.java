@@ -1,2 +1,7 @@
-package InterfaceHeranca2;public class SqlDCL {
+package InterfaceHeranca2;
+
+public interface SqlDCL {
+
+    void grant (String access);
+    void remoke (String access);
 }

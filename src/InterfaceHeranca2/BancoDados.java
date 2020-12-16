@@ -1,2 +1,7 @@
-package InterfaceHeranca2;public class BancoDados {
+package InterfaceHeranca2;
+
+public interface BancoDados extends SqlDCL,SqlDDl,SqlDMl {
+
+    void abrirConexao();
+    void fecharConexao();
 }
