@@ -16,6 +16,9 @@ public class TestandoFinally {
             catch(ArrayIndexOutOfBoundsException e){
                 System.out.println("Posição do array inválida ");
             }
+            finally {
+                System.out.println("Essa linha é impressa sempre após o try ou catch");
+            }
         }
     }
 }

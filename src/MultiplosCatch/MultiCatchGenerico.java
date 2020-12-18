@@ -1,6 +1,6 @@
 package MultiplosCatch;
 
-public class MultiCatch {
+public class MultiCatchGenerico {
 
     public static void main(String[] args) {
         int[] numeros = {4, 8, 16, 32, 64, 128};
@@ -10,11 +10,11 @@ public class MultiCatch {
             try{
                 System.out.println(numeros[i] + " / " + denom[i] + " = " + (numeros[i]/denom[i]));
             }
-            catch(ArithmeticException ee){
+            catch(ArithmeticException e){
                 System.out.println("Erro ao dividir por zero");
             }
-            catch(ArrayIndexOutOfBoundsException e){
-                System.out.println("Posição do array inválida ");
+            catch(Throwable e){
+                System.out.println("Ocorreu um erro");
             }
         }
     }
